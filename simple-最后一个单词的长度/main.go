@@ -22,8 +22,12 @@ func lengthOfLastWord(s string) int {
 	}
   //开始计算最后一个
 	for s[u] != ' ' {
-		u -- 
 		sum++
+		if u == 0 {
+            	     break
+        	}
+		u -- 
+		
 	}
 	
 	return sum
